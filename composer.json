@@ -1,0 +1,31 @@
+{
+    "name": "crackzer/themes",
+    "description": "Laravel 7 Themes",
+    "keywords": ["themes", "laravel", "caffeinated", "blade"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CraCkzer"
+        }
+    ],
+    "require": {
+        "php": "7.2",
+        "caffeinated/manifest": "1.0.*",
+        "illuminate/support": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Caffeinated\\Themes\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Caffeinated\\Themes\\ThemesServiceProvider"
+            ],
+            "aliases": {
+                "Theme": "Caffeinated\\Themes\\Facades\\Theme"
+            }
+        }
+    }
+}
